@@ -1,0 +1,17 @@
+{
+  "name": "control_tareas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ISC Herson Jehovani Almaraz Trejo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.3"
+  }
+}
