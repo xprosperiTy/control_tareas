@@ -1,0 +1,22 @@
+	Control de tareas
+1.-Habilitar apache y MySQL en XAMPP.
+
+2.-El proyecto debe estar ubicado en la carpeta htdocs o en la respectiva carpeta donde se almacenan tus proyectos para cargarlos 
+con XAMPP,WAMPPo LAMP, etc.
+
+3.-Una vez realizado lo anterior accederemos a la carpeta del proyecto por medio de un shell o cmd y ejecutaremos el comando node index.js.
+
+4.-Ingresas al link localhost/control_tareas/login.html y colocas datos de algun usuario que este en la base de datos para acceder al sistema.
+
+5.-Al ya haber ingresado te saldre un menu donde estarán las opciones(endpoints) para las tareas.
+
+6.-La primera opción te consulta todas las tareas creadas.
+
+7.-La segunda opción al dar clic al botón te mandará a la dirección localhost:3000/tareas/:id, tendrás que reemplazar el apartado de ":id" por 
+   el id de la tarea que deseas consultar.
+
+8.-La tercer opción te permite crear tareas, al haber dado clic a su respectivo botón tendrás que llenar el formulario y dar clic en el botón crear.
+
+9.-L cuarta opción permite editar el status de las tareas indicando cual es el id de la tarea que deseas editar en el formulario.
+
+10.-La quinta opción te permitirá eliminar la tarea que especifiques en el formulario.
