@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>Editar</title>
+</head>
+<body>
+    <label for="">Id:</label><br>
+    <input type="text" id="id"><br>
+    <label for="">Status:</label><br>
+    <input type="text" id="status"><br><br>
+    <button onclick="actualizar()">Actualizar</button>
+    <script>
+        function actualizar() {
+            var id = document.getElementById('id').value;
+            var status = document.getElementById('status').value;
+           
+
+            const cambios = { status: status,};
+
+        fetch('/editar/'+id, {
+            method: 'PUT',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(cambios)
+        })
+        .then(response => {
+            if (response.ok) {
+            alert('Tarea actualizada exitosamente');
+            } else {
+            alert('No se pudo actualizar la tarea');
+            }
+        })
+        .catch(error => {
+            console.error(error);
+            alert('Error al actualizar la tarea');
+        });
+        }
+    </script>
+</body>
+</html>

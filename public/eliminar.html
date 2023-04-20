@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar</title>
+</head>
+<body>
+    <label for="">Id:</label><br>
+    <input type="text" id="id"><br><br>
+    <button type="button" onclick="eliminar()">Enviar</button><br>
+    <script>
+        function eliminar() {
+          var id =document.getElementById("id").value;
+          fetch('/eliminar/'+id, {
+            method: 'DELETE'
+          })
+          .then(response => {
+            if (response.ok) {
+              alert('Tarea eliminada exitosamente');
+            } else {
+              alert('No se pudo eliminar la tarea');
+            }
+          })
+          .catch(error => {
+            console.error(error);
+            alert('Error al eliminar la tarea');
+          });
+        }
+    </script>
+</body>
+</html>
