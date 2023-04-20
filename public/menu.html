@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <form action="http://localhost:3000/tareas" method="GET">
+                    <button type="submit">Consultar tareas</button>
+                </form>
+            </li>
+            <li>
+                <form action="http://localhost:3000/tareas/:id" method="GET">
+                    <button>Consultar tarea especifica</button>
+                </form>
+            </li>
+            <li>
+                <form action="crear.html">
+                    <button>Crear Tarea</button>
+                </form>
+                </li>
+            <li>
+                <form action="editar.html">
+                    <button>Actualizar Tarea</button>
+                </form>
+            </li>
+            <li>
+                <form action="eliminar.html">
+                    <button>Eliminar Tarea</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
